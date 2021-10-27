@@ -1,11 +1,11 @@
 <template>
   <v-container fluid class="home">
     <bannerHome
-      title="Climoscópio"
-      style="background-image: url('/imagens/climo.jpg');"
+      title="QUALIDADE DO AR LABORATORIAL"
+      style-banner="background-image: url('/imagens/climo.jpg');"
     />
     <aboutUsHome :imagens-about-us="ImgQuemSomos" />
-    <informsHome :content-project="informacoesHome" />
+    <informsHome />
   </v-container>
 </template>
 
@@ -18,23 +18,6 @@ export default {
   components: { bannerHome, aboutUsHome, informsHome },
   data() {
     return {
-      informacoesHome: [
-        {
-          title: 'Sensores',
-          text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-          title: 'Aquisição de Dados',
-          text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-          title: 'Transmissão de Dados',
-          text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-      ],
       ImgQuemSomos: [
         {
           link: '/',
@@ -56,7 +39,6 @@ export default {
 
 <style scoped>
 .home {
-  background-color: rgba(245, 228, 50, 0.2);
   padding: 0px;
 }
 </style>

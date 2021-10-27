@@ -24,7 +24,15 @@
         <v-row justify="center" align="center">
           <v-col cols="2" class="paddingFootRedes">
             <v-row justify="center" align="center">
-              <v-btn class="mx-2 buttonFooter" fab dark x-small color="#3ab63e">
+              <v-btn
+                href="https://www.facebook.com/cienciaufpr"
+                class="mx-2 buttonFooter"
+                fab
+                target="_blank"
+                dark
+                small
+                color="#3ab63e"
+              >
                 <v-icon dark>
                   mdi-facebook
                 </v-icon>
@@ -33,7 +41,15 @@
           </v-col>
           <v-col cols="2" class="paddingFootRedes">
             <v-row justify="center" align="center">
-              <v-btn class="mx-2 buttonFooter" fab dark x-small color="#3ab63e">
+              <v-btn
+                href="https://www.instagram.com/cptufpr/"
+                target="_blank"
+                class="mx-2 buttonFooter"
+                fab
+                dark
+                small
+                color="#3ab63e"
+              >
                 <v-icon dark>
                   mdi-instagram
                 </v-icon>
@@ -42,7 +58,15 @@
           </v-col>
           <v-col cols="2" class="paddingFootRedes">
             <v-row justify="center" align="center">
-              <v-btn class="mx-2 buttonFooter" fab dark x-small color="#3ab63e">
+              <v-btn
+                href="https://www.youtube.com/channel/UC653xTB6AEfzd1RiC7CNVzQ"
+                target="_blank"
+                class="mx-2 buttonFooter"
+                fab
+                dark
+                small
+                color="#3ab63e"
+              >
                 <v-icon dark>
                   mdi-youtube
                 </v-icon>
@@ -71,7 +95,7 @@
         <v-icon class="IconFooterOne" color="#3ab63e" size="40"
           >mdi-email</v-icon
         >
-        <h5 class="textFooter FooterEmail">andrebmariano@ufpr.br</h5>
+        <h5 class="textFooter FooterEmail">ericksilva@ufpr.br</h5>
         <v-icon class="IconFooterOne IconFooterWhats" color="#3ab63e" size="40"
           >mdi-phone-classic</v-icon
         >
@@ -81,8 +105,13 @@
     <v-row class="footer-row" align="center" justify="center">
       <v-col cols="12" class="FooterFinal">
         <h5 class="textFooter">
-          Desenvolvido com <v-icon>mdi-heart</v-icon> por Erick Santos © 2021 -
-          Climoscópio
+          Desenvolvido com <v-icon>mdi-heart</v-icon> por
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/erick-santos-5a31a9110"
+            >Erick Santos</a
+          >
+          © 2021
         </h5>
       </v-col>
     </v-row>
@@ -97,7 +126,12 @@ export default {}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 .footer-background {
-  background-color: #f5fafd;
+  background-color: rgba(58, 182, 62, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .FooterFinal {

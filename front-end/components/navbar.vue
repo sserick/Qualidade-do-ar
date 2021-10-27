@@ -13,10 +13,12 @@
           </router-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
         <v-toolbar-items class="d-none d-md-flex">
           <v-btn
-            v-for="item in items"
-            :key="item.title"
+            v-for="(item, i) in items"
+            :key="i"
             flat
             :to="item.link"
             depressed
@@ -84,16 +86,12 @@ export default {
           link: '/',
         },
         {
-          title: 'UMIDADE RELATIVA DO AR',
-          link: '/moisture',
+          title: 'SOBRE O PROJETO',
+          link: '/aboutProject',
         },
         {
-          title: 'DIÓXIDO DE CARBONO',
-          link: '/carbon',
-        },
-        {
-          title: 'TEMPERATURA',
-          link: '/temperature',
+          title: 'MONITORAMENTO',
+          link: '/monitoring',
         },
         {
           title: 'HISTÓRICO',
@@ -101,7 +99,7 @@ export default {
         },
         {
           title: 'ENTRAR',
-          link: '/',
+          link: '/login',
         },
       ],
     }

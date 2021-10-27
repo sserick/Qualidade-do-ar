@@ -1,23 +1,25 @@
 <template>
   <v-container fluid class="home">
     <bannerHome
-      title="Histórico"
-      style="background-image: url('/imagens/historico.jpg');"
+      title="HISTÓRICO"
+      style-banner="background-image: url('/imagens/historico.jpg');"
     />
+    <dados-historyc />
   </v-container>
 </template>
 
 <script>
 import bannerHome from '../components/sectionsHome/banner.vue'
+import dadosHistoryc from '../components/sectionsHistory/dadosHistory.vue'
 
 export default {
-  components: { bannerHome },
+  components: { bannerHome, dadosHistoryc },
 }
 </script>
 
 <style scoped>
 .home {
-  background-color: rgba(245, 228, 50, 0.2);
+  background-color: rgba(58, 182, 62, 0.05);
   padding: 0px;
 }
 </style>

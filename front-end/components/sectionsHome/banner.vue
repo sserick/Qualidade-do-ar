@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="SectionBanner" :style="style">
+  <v-container fluid class="SectionBanner" :style="styleBanner">
     <v-row align="center" justify="center" class="imgBanner">
       <h2 class="titleBanner">{{ title }}</h2>
     </v-row>
@@ -15,11 +15,14 @@ export default {
       default: () => [],
     },
 
-    style: {
+    styleBanner: {
       type: String,
       required: false,
       default: () => [],
     },
+  },
+  data() {
+    return {}
   },
 }
 </script>
@@ -43,7 +46,7 @@ export default {
 
 .titleBanner {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   border-bottom-color: #3ab63e;
   border-bottom-width: 5px;
   border-bottom-style: solid;
