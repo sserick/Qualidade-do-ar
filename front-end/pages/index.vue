@@ -1,38 +1,44 @@
 <template>
-  <v-container>
-    <v-layout column justify-center align-center fill-height>
-      <p>
-        1) Olhem e pesquisem sobre a estrutura das Pastas NUXT no drive de
-        Projetos antes de iniciar
-      </p>
-      <p>2) Utilizem o Vuetify, contém vários componentes e scripts prontos</p>
-      <p>
-        3) Vejam os projetos antigos e se baseiem neles Ex: AfroCuritiba,
-        Humanidades, Site da Ecomp, etc...
-      </p>
-      <p>
-        4) Para pegar dados do backend, pesquisem sobre AXIOS e vejam o
-        <a
-          style="text-decoration: none;"
-          href="https://gitlab.com/ecomp-ufpr/cat-logos/front-enc"
-          target="_blank"
-          >Catálogo</a
-        >
-        de exemplos
-      </p>
-      <p>
-        6) Sigam o padrão de código estabelecido por Qualidade tiver
-      </p>
-      <!--link do doc qnd -->
-      <p>
-        5) **Não hesitem em perguntar, somos todos ECOMP**
-      </p>
-    </v-layout>
+  <v-container fluid class="home">
+    <bannerHome
+      title="QUALIDADE DO AR LABORATORIAL"
+      style-banner="background-image: url('/imagens/climo.jpg');"
+    />
+    <aboutUsHome :imagens-about-us="ImgQuemSomos" />
+    <informsHome />
   </v-container>
 </template>
 
 <script>
+import bannerHome from '../components/sectionsHome/banner.vue'
+import aboutUsHome from '../components/sectionsHome/aboutUs.vue'
+import informsHome from '../components/sectionsHome/informs.vue'
+
 export default {
-  components: {},
+  components: { bannerHome, aboutUsHome, informsHome },
+  data() {
+    return {
+      ImgQuemSomos: [
+        {
+          link: '/',
+          src: '../imagens/climo.jpg',
+        },
+        {
+          link: '/',
+          src: '../imagens/historico.jpg',
+        },
+        {
+          link: '/',
+          src: '../imagens/carbono.JPG',
+        },
+      ],
+    }
+  },
 }
 </script>
+
+<style scoped>
+.home {
+  padding: 0px;
+}
+</style>
